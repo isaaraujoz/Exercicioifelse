@@ -1,0 +1,33 @@
+/*Isabela Araujo Almeida Barreto 
+A empresa XSoftware concedeu um bônus de 20% do valor do salário a 	todos os funcionários com tempos de trabalho na empresa igual ou 	superior a cinco anos e de 10% aos demais funcionários.
+Faça um algoritmo que leia o salário e a quantidade de anos de cada 	funcionário, calcule e imprima o valor do bônus.
+*/
+import java.util.Scanner;
+
+public class Exercicio7 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ler salário
+        System.out.print("Digite o salário do funcionário: ");
+        double salario = scanner.nextDouble();
+
+        // Ler tempo de serviço (anos)
+        System.out.print("Digite a quantidade de anos de trabalho: ");
+        int anos = scanner.nextInt();
+
+        double bonus;
+
+        // Calcular bônus
+        if (anos >= 5) {
+            bonus = salario * 0.20; // 20% para >= 5 anos
+        } else {
+            bonus = salario * 0.10; // 10% para < 5 anos
+        }
+
+        // Imprimir resultado
+        System.out.println("O valor do bônus é: R$ " + bonus);
+
+        scanner.close();
+    }
+}

@@ -1,0 +1,24 @@
+/*Isabela Araujo Almeida Barreto 
+Faça um algoritmo que leia um número inteiro.
+Se o número for maior que 20. . .
+calcular e imprimir a metade dele.
+*/
+import java.util.Scanner;
+
+public class Exercicio1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ler número inteiro
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+
+        // Verificar se é maior que 20
+        if (numero > 20) {
+            double metade = numero / 2.0;
+            System.out.println("A metade do número é: " + metade);
+        }
+
+        scanner.close();
+    }
+}
